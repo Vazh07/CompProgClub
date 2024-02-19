@@ -1,0 +1,21 @@
+Description of problem in 18490.Tortillas_horneadas
+
+Descripción
+Camila y Jonathan son dos intrépidos exploradores culinarios que decidieron embarcarse en un viaje a través de un país tropical, conocido por sus sabrosas tortillas. Un día, mientras paseaban por un mercado local, Jonathan se sintió intrigado por el aroma encantador de unas tortillas recién hechas. Al darse cuenta de que tenían la peculiaridad de ser rectangulares, decidió que era imprescindible intentar recrear esa receta en su propia cocina.
+
+El vendedor, amablemente, compartió la peculiaridad de las tortillas: para obtener esa textura y sabor únicos, utilizaban un gramo de maíz por cada centímetro cuadrado de la tortilla. Inspirado, Jonathan decidió darle su propio giro a la receta: prepararía una tortilla cuyo largo sería
+ a centímetros y el ancho sería
+ b centímetros, siendo
+ a y b
+ dos variables enteras que pueden adaptarse para crear tortillas de distintos tamaños. Ayuda a Jonathan y Camila a calcular cuántos gramos de maíz necesitarán para preparar una tortilla.
+
+Entrada
+La entrada consiste en dos líneas, cada una con un número entero. La primera línea contiene el valor de a(1<=a<=1000)
+
+ y la segunda línea contiene el valor de b(1<=b<=1000)
+
+.
+
+Salida
+La salida debe consistir en una sola línea que contiene un número entero: la cantidad de gramos de maíz que Jonathan y Camila necesitarán para hornear la tortilla.
+
