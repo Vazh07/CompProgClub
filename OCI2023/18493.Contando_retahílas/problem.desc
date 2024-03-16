@@ -1,1 +1,13 @@
 Description of problem in 18493.Contando_retahílas
+Descripción
+Camila es una filóloga interesada en las retahílas. Mientras se encontraba en la Biblioteca Nacional recopilando información, conoció a Jonathan, un estudiante de programación que se encontraba revisando algunos libros sobre algoritmos de procesamiento de texto. Al darse cuenta de que ambos tenían intereses similares, decidieron trabajar juntos. Camila se encargaría de recopilar las palabras de las retahílas y Jonathan de programar una solución que le ayudaría a identificar las palabras con más vocales. ¿Puedes ayudar a Jonathan a desarrollar el programa?
+
+Tu tarea es determinar, de una lista de palabras, cuál tiene el mayor número de vocales. Si hay más de una palabra con el máximo número de vocales, deberás devolver la última de ellas. Solamente se considerarán vocales las siguientes letras: a, e, i, o, u.
+
+Entrada
+Un número entero
+(1<=n<=100)
+, que indica la cantidad de palabras en la lista.
+ líneas, donde cada línea contiene una palabra con caracteres de la 'a' la 'z' en minúsculas, sin tildes ni ñ. Cada palabra tiene una longitud máxima de 50 caracteres.
+Salida
+Una sola línea con la palabra que tiene el mayor número de vocales. En caso de empate, mostrar la última palabra con el máximo número de vocales.

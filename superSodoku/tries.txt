@@ -1,0 +1,62 @@
+options = list(range(1, int(n)+1))
+        for row in board:
+            for indx1, cell in enumerate(row.split(' ')):
+                if indx1 == indx and int(cell) != -1:
+                    try:
+                        del options[options.index(int(cell))]
+                    except ValueError:
+                        pass
+                    print(indx,indx1,options)
+                    opts.append(options)
+        indx += 1
+    print(opts)
+
+
+    for indx1 in range(k, n):
+        options = list(range(1, n+1))
+        for indx2, _ in enumerate(board[indx1]):
+            selected = 0
+            for opIndx, op in enumerate(opts[indx2]):
+                if int(op) in options:
+                    selected = op
+                    del opts[indx2][opIndx]
+            try:
+                del options[options.index(selected)]
+            except ValueError:
+                pass
+            board[indx1][indx2] = selected
+            if selected == 0:
+                has_sol = "no"
+
+for indx1 in range(k, n):
+        options = list(range(1, n+1))
+        for indx2, _ in enumerate(board[indx1]):
+            selected = 0
+            for opIndx, op in enumerate(opts[indx2]):
+                if int(op) in options:
+                    selected = op
+                    del opts[indx2][opIndx]
+            try:
+                del options[options.index(selected)]
+            except ValueError:
+                pass
+            board[indx1][indx2] = selected
+            if selected == 0:
+                has_sol = "no"
+
+def sodoku_aux(board, options, p):
+    board_size = len(board[0])
+    i = p[0]
+    j = p[1]
+    if i >= board_size:
+        return board
+    if board[i][j] == -1:
+        if j+1 < board_size:
+            p[1] += 1
+        else:
+            p[0] += 1
+            p[1] = 0
+        for opt in options[j]:
+            board[i][j] = opt#check_position(board, i, j, opt)
+            print(i, j, board)
+            sodoku_aux(board, options, p)

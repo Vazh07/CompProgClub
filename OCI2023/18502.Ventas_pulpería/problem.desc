@@ -1,1 +1,37 @@
 Description of problem in 18502.Ventas_pulpería
+Descripción
+Camila y Jonathan trabajan juntos en una pulpería. Camila tiene conocimientos de programación y se está encargando de automatizar diferentes procesos del negocio, mientras que Jonathan realiza las ventas.
+
+Jonathan tiene una consulta específica para Camila: quiere determinar cuánto dinero obtendría si se vendiera cada artículo en diferentes cantidades y sumar todas las combinaciones cuyo valor supera cierto umbral
+. Dicho de otra manera, Jonathan quiere se sumen las ganancias que resultan de multiplicar el precio de cada artículo por cada posible cantidad vendida, pero sólo para los cada resultados que sean mayores o iguales a un valor
+ determinado. ¿Puedes ayudar a Camila a resolver este reto?
+
+Entrada
+La entrada consiste en una línea con tres números enteros separados por espacios:
+,
+ y
+. Donde:
+
+
+ representa la cantidad de artículos diferentes que se venden en la pulpería.
+
+ indica la cantidad de diferentes posibles cantidades de productos que podrían venderse en un día.
+
+ es el umbral de ganancia mínima que Jonathan considera interesante.
+En la segunda línea, se presentan
+ enteros
+, separados por espacios que indican los precios de cada artículo. Se cumple que
+ para cada
+
+.
+
+En la tercera línea, se encuentran
+ enteros
+ separados por espacios que representan las distintas cantidades de productos que Jonathan considera podrían venderse en un día. Se cumple que
+ para cada
+
+.
+
+Salida
+Debe imprimirse un único número entero, que es la suma total de las ganancias obtenidas al multiplicar cada precio por cada posible cantidad, pero sólo sumando aquellos resultados que sean mayores o iguales a
+.
